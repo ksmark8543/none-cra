@@ -1,21 +1,36 @@
 {
-  "name": "danang",
+  "name": "react-danang",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack serve --progress --mode development",
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "Jinong",
+    "email": "ksmark1@gmail.com"
   },
-  "keywords": [],
-  "author": "",
+  "description": "지농의 다낭 UI",
+  "keywords": [
+    "react",
+    "react-danang",
+    "danang",
+    "Jinong",
+    "지농",
+    "ui",
+    "ux"
+  ],
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
     "styled-components": "^6.1.8",
     "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "start": "webpack serve --progress --mode development",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "rmdir /s dist && mkdir dist && tsc"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
@@ -36,6 +51,7 @@
     "postcss-preset-env": "^9.3.0",
     "style-loader": "^3.3.4",
     "tailwindcss": "^3.4.1",
+    "ts-loader": "^9.5.1",
     "webpack": "^5.90.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
