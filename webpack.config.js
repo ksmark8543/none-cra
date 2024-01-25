@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "development", // 개발모드인지 프로덕션모드인지 설정해줍니다. env도 가능
-  entry: "./src/index.js", // 웹팩 번들링을 할 파일
+  entry: "./src/lib/index.tsx", // 웹팩 번들링을 할 파일
   output: {
     // 번들링이 완료되면 저장될 경로와 번들링 파일 이름
     path: __dirname + "/dist",
@@ -16,7 +16,7 @@ module.exports = {
     // 번들링의 대상이 될 파일 확장자
     // path.resove 형태로 사용할 수도 있다.
     // 그러면 node의 기본 모듈 'path'를 불러와야 한다.
-    extensions: [".js", ".jsx"],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
   module: {
     rules: [
@@ -50,7 +50,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    host: "localhost",    
+    host: "localhost",
     // port: process.env.port,
     port: 3002,
     open: true,
