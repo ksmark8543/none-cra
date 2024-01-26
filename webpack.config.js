@@ -12,8 +12,7 @@ module.exports = (env, argv) => {
       // 번들링이 완료되면 저장될 경로와 번들링 파일 이름
       path: __dirname + "/dist",
       // filename: "bundle.[hash].js",
-      filename: "bundle.js",
-
+      filename: "bundle.[hash].js",
       publicPath: "/",
     },
     resolve: {

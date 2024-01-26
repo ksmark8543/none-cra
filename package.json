@@ -1,7 +1,7 @@
 {
-  "name": "react-danang",
-  "version": "0.0.1",
-  "description": "지농의 다낭 UI",
+  "name": "react-danang-test",
+  "version": "0.1.1",
+  "description": "지농의 다낭 UI-TEST",
   "main": "dist/index.jsx",
   "types": "dist/index.d.ts",
   "private": false,
@@ -20,12 +20,15 @@
   "scripts": {
     "start": "webpack serve --progress --mode development",
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "rmdir /s dist && mkdir dist && tsc"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
+    "eslint": "^8.56.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
     "styled-components": "^6.1.8",
     "typescript": "^5.3.3"
   },

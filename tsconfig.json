@@ -9,14 +9,19 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "ES2015",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "declaration": true,
     "outDir": "./dist"
   },
-  "include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts", "src/lib/index.tsx"]
+  "include": [
+    "./src/lib/**/*.tsx",
+    "./src/lib/**/*.ts",
+    "src/lib/index.tsx",
+    "src/lib/react-danang/layout/index.tsx"
+  ]
 }

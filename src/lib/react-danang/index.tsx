@@ -1,7 +1,3 @@
-import React from "react";
+import Layout from "./layout";
 
-const Danang = () => {
-  return <div>danang 2.3</div>;
-};
-
-export default Danang;
+export { Layout };
